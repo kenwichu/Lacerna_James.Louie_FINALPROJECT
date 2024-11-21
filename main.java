@@ -337,9 +337,9 @@ public class BirdWatchingApp {
     }
 
     private static void viewOtherUsersRanks() {
-        System.out.println("************************************************");
-        System.out.println("                   OTHER USERS' RANKS");
-        System.out.println("**********************************************");
+        System.out.println("=================================================================");
+        System.out.println("                    OTHER USERS' RANKS");
+        System.out.println("=================================================================");
         for (BirdWatcher watcher : users.values()) {
             System.out.println("User: " + watcher.getUsername() + " | Rank: " + watcher.getRank() + " | Sightings: " + watcher.getSightingsCount());
         }
