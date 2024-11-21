@@ -12,7 +12,6 @@
 5. [Setup Instructions](#setup-instructions)  
 6. [Files and Storage](#files-and-storage)  
 7. [Example Usage](#example-usage)  
-8. [Contributors](#contributors)  
 
 ---
 
@@ -99,3 +98,58 @@ Feather Quest simplifies birdwatching documentation and promotes awareness of bi
 1. Compile the code:  
    ```bash  
    javac BirdWatchingApp.java  
+
+---
+
+## **Files and Storage** 📂  
+
+- User data and bird sightings are stored locally in text files named `<username>_sightings.txt`.  
+- Each sighting includes the bird’s name, location, date, and time.
+- The file format for each sighting is as follows:
+  ```plaintext
+  Bird Name: Philippine Duck
+  Location: Taal Lake
+  Date: 2024-11-21
+  Time: 08:45 AM
+
+birder123_sightings.txt
+
+Bird Name: Philippine Duck
+Location: Taal Lake
+Date: 2024-11-21
+Time: 08:45 AM
+
+Bird Name: Mallard
+Location: Taal Lake
+Date: 2024-11-20
+Time: 10:00 AM
+
+---
+
+## **Setup Instructions** ⚙️  
+
+### **Prerequisites**  
+To run this project, you will need:
+
+- **Java Runtime Environment (JRE)** version 8 or higher.
+- A compatible IDE or text editor for editing and running Java programs (e.g., IntelliJ IDEA, Eclipse, or Visual Studio Code).
+
+### **Running the App**  
+
+1. **Clone the repository**:
+    ```bash
+    git clone https://github.com/your-username/feather-quest.git
+    cd feather-quest
+    ```
+
+2. **Compile the Java code**:
+    ```bash
+    javac BirdWatchingApp.java
+    ```
+
+3. **Run the program**:
+    ```bash
+    java BirdWatchingApp
+    ```
+
+---
