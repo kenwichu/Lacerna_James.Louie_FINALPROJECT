@@ -10,8 +10,7 @@
    - [Problem it Solves](#problem-it-solves)
 4. [OOP Concepts](#oop-concepts)
 5. [Bird Database Highlights](#bird-database-highlights)  
-6. [Setup Instructions](#setup-instructions)  
-7. [Files and Storage](#files-and-storage)  
+6. [Files and Storage](#files-and-storage)  
 
 ---
 
@@ -106,7 +105,6 @@ The program demonstrates abstraction by using abstract classes or interfaces to 
 
 ---
 
-## **Setup Instructions** 🛠️  
 
 ### **Prerequisites**  
 - **Java Runtime Environment (JRE)**: Version 8 or higher.  
@@ -141,12 +139,5 @@ Location: Taal Lake
 Date: 2024-11-20
 Time: 10:00 AM
 
----
- 
 
-### **Prerequisites**  
-To run this project, you will need:
-
-- **Java Runtime Environment (JRE)** version 8 or higher.
-- A compatible IDE or text editor for editing and running Java programs (e.g., IntelliJ IDEA, Eclipse, or Visual Studio Code).
 
