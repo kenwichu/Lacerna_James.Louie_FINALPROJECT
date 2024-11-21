@@ -43,7 +43,8 @@ public class Bird {
     }
 }
 ```
-##2. Inheritance 🔄
+
+## 2. **Inheritance** 🔄
 The program demonstrates inheritance through a hierarchy of bird species. For instance, different types of birds (like EndemicBird, CommonBird, RareBird) inherit from a base class Bird. This allows for code reuse, where common properties like name, color, and size are defined in the parent class, and specialized behaviors can be added in the subclasses.
 
 Example of Inheritance:
