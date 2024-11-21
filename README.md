@@ -7,10 +7,11 @@
    - [Scope](#scope)  
    - [Limitations and Constraints](#limitations-and-constraints)  
    - [Features](#features)  
-   - [Problem it Solves](#problem-it-solves)  
-4. [Bird Database Highlights](#bird-database-highlights)  
-5. [Setup Instructions](#setup-instructions)  
-6. [Files and Storage](#files-and-storage)  
+   - [Problem it Solves](#problem-it-solves)
+4. [OOP Concepts](#oop-concepts)
+5. [Bird Database Highlights](#bird-database-highlights)  
+6. [Setup Instructions](#setup-instructions)  
+7. [Files and Storage](#files-and-storage)  
 
 ---
 
@@ -69,6 +70,166 @@
 Feather Quest simplifies birdwatching documentation and promotes awareness of bird species in the Philippines, encouraging conservation efforts.  
 
 ---
+
+## **OOP Concepts** 🔄
+
+### 1. **Encapsulation** 🔒  
+Encapsulation is demonstrated in Feather Quest by organizing data within classes and providing public getter and setter methods to control access to private fields. This ensures that users can only interact with the data in specific, controlled ways, preserving the integrity of the program.
+
+**Example of Encapsulation**:
+```java
+// Bird class with encapsulated fields
+public class Bird {
+    private String name;
+    private String color;
+
+    public Bird(String name, String color) {
+        this.name = name;
+        this.color = color;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+}
+2. Inheritance 🔄
+The app uses inheritance to create different types of birds, like EndemicBird, CommonBird, and RareBird, that inherit common properties from a base class Bird. This allows for code reuse and a hierarchical structure that organizes bird species efficiently.
+
+Example of Inheritance:
+
+java
+Copy code
+// Base class: Bird
+public class Bird {
+    private String name;
+    private String color;
+
+    public Bird(String name, String color) {
+        this.name = name;
+        this.color = color;
+    }
+
+    public void displayInfo() {
+        System.out.println("Bird Name: " + name + " | Color: " + color);
+    }
+}
+
+// Subclass: EndemicBird
+public class EndemicBird extends Bird {
+    private String endemicRegion;
+
+    public EndemicBird(String name, String color, String endemicRegion) {
+        super(name, color);
+        this.endemicRegion = endemicRegion;
+    }
+
+    @Override
+    public void displayInfo() {
+        super.displayInfo();
+        System.out.println("Endemic Region: " + endemicRegion);
+    }
+}
+### 2. **Inheritance** 🔄  
+The program demonstrates inheritance through a hierarchy of bird species. For instance, different types of birds (like EndemicBird, CommonBird, RareBird) inherit from a base class `Bird`. This allows for code reuse, where common properties like name, color, and size are defined in the parent class, and specialized behaviors can be added in the subclasses.
+
+**Example of Inheritance**:
+
+```java
+// Base class: Bird
+public class Bird {
+    private String name;
+    private String color;
+    private String size;
+
+    // Constructor
+    public Bird(String name, String color, String size) {
+        this.name = name;
+        this.color = color;
+        this.size = size;
+    }
+
+    public void displayInfo() {
+        System.out.println("Bird Name: " + name);
+        System.out.println("Color: " + color);
+        System.out.println("Size: " + size);
+    }
+}
+
+// Subclass: EndemicBird (inherits from Bird)
+public class EndemicBird extends Bird {
+    private String endemicRegion;
+
+    public EndemicBird(String name, String color, String size, String endemicRegion) {
+        super(name, color, size);  // Call the parent class constructor
+        this.endemicRegion = endemicRegion;
+    }
+
+    @Override
+    public void displayInfo() {
+        super.displayInfo();  // Call the parent class method
+        System.out.println("Endemic Region: " + endemicRegion);
+    }
+}
+### 3. **Polymorphism** 🔄  
+The program demonstrates polymorphism through method overloading and overriding. This allows the same method name to behave differently depending on the context or the object calling it.
+
+**Example of Polymorphism**:
+
+```java
+// Method Overloading Example: logSighting
+public void logSighting(String birdName) {
+    System.out.println("Sighting logged: " + birdName);
+}
+
+public void logSighting(String birdName, String location) {
+    System.out.println("Sighting logged: " + birdName + " at " + location);
+}
+### 4. **Abstraction** 🔍  
+The program demonstrates abstraction by using abstract classes or interfaces to hide the complex details of bird behavior, exposing only essential operations to the user.
+
+**Example of Abstraction**:
+
+```java
+// Abstract class: Bird
+public abstract class Bird {
+    private String name;
+
+    public Bird(String name) {
+        this.name = name;
+    }
+
+    // Abstract method: To be implemented by subclasses
+    public abstract void makeSound();
+
+    // Common method
+    public void displayInfo() {
+        System.out.println("Bird Name: " + name);
+    }
+}
+
+// Subclass: Sparrow
+public class Sparrow extends Bird {
+    public Sparrow(String name) {
+        super(name);
+    }
+
+    @Override
+    public void makeSound() {
+        System.out.println("Chirp Chirp!");
+    }
+}
 
 ## **Bird Database Highlights** 🐦  
 **Endemic Species**:  
