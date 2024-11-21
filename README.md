@@ -157,19 +157,19 @@ Before running the program, ensure you have the following installed:
    ```bash
    git clone https://github.com/yourusername/feather-quest.git
    ```
-2. **Navigate to the Project Directory:
+2. **Navigate to the Project Directory:**
     ```bash
-cd feather-quest
+    cd feather-quest
    ```
 3. **Compile the Code:**
 Use the following command to compile the Java files:
    ```bash
-javac BirdWatchingApp.java
+    javac BirdWatchingApp.java
    ```
 4. **Run the Program:**
 Once the code is compiled, you can run the program with:
    ```bash
-java BirdWatchingApp
+    java BirdWatchingApp
    ```
 ## **Files and Storage** 📂
 - User data and bird sightings are stored locally in text files named <username>_sightings.txt.
