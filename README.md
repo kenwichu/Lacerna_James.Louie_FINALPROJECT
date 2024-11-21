@@ -176,8 +176,8 @@ Once the code is compiled, you can run the program with:
 - Each sighting includes the bird’s name, location, date, and time.
 - The file format for each sighting is as follows:
    ```plaintext
-Bird Name: Philippine Duck
-Location: Taal Lake
-Date: 2024-11-21
-Time: 08:45 AM
+    Bird Name: Philippine Duck
+    Location: Taal Lake
+    Date: 2024-11-21
+    Time: 08:45 AM
    ```
