@@ -48,9 +48,40 @@ public class Bird {
 The program demonstrates inheritance through a hierarchy of bird species. For instance, different types of birds (like EndemicBird, CommonBird, RareBird) inherit from a base class Bird. This allows for code reuse, where common properties like name, color, and size are defined in the parent class, and specialized behaviors can be added in the subclasses.
 
 Example of Inheritance:
-
-java
-Copy code
+```java
 // Base class: Bird
+public class Bird {
+    private String name;
+    private String color;
+    private String size;
 
-## 
+    // Constructor
+    public Bird(String name, String color, String size) {
+        this.name = name;
+        this.color = color;
+        this.size = size;
+    }
+
+    public void displayInfo() {
+        System.out.println("Bird Name: " + name);
+        System.out.println("Color: " + color);
+        System.out.println("Size: " + size);
+    }
+}
+
+// Subclass: EndemicBird (inherits from Bird)
+public class EndemicBird extends Bird {
+    private String endemicRegion;
+
+    public EndemicBird(String name, String color, String size, String endemicRegion) {
+        super(name, color, size);  // Call the parent class constructor
+        this.endemicRegion = endemicRegion;
+    }
+
+    @Override
+    public void displayInfo() {
+        super.displayInfo();  // Call the parent class method
+        System.out.println("Endemic Region: " + endemicRegion);
+    }
+}
+
