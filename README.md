@@ -104,43 +104,7 @@ public class Bird {
         this.color = color;
     }
 }
-2. Inheritance 🔄
-The app uses inheritance to create different types of birds, like EndemicBird, CommonBird, and RareBird, that inherit common properties from a base class Bird. This allows for code reuse and a hierarchical structure that organizes bird species efficiently.
 
-Example of Inheritance:
-
-java
-Copy code
-// Base class: Bird
-public class Bird {
-    private String name;
-    private String color;
-
-    public Bird(String name, String color) {
-        this.name = name;
-        this.color = color;
-    }
-
-    public void displayInfo() {
-        System.out.println("Bird Name: " + name + " | Color: " + color);
-    }
-}
-
-// Subclass: EndemicBird
-public class EndemicBird extends Bird {
-    private String endemicRegion;
-
-    public EndemicBird(String name, String color, String endemicRegion) {
-        super(name, color);
-        this.endemicRegion = endemicRegion;
-    }
-
-    @Override
-    public void displayInfo() {
-        super.displayInfo();
-        System.out.println("Endemic Region: " + endemicRegion);
-    }
-}
 ### 2. **Inheritance** 🔄  
 The program demonstrates inheritance through a hierarchy of bird species. For instance, different types of birds (like EndemicBird, CommonBird, RareBird) inherit from a base class `Bird`. This allows for code reuse, where common properties like name, color, and size are defined in the parent class, and specialized behaviors can be added in the subclasses.
 
