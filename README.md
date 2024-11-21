@@ -11,7 +11,6 @@
 4. [Bird Database Highlights](#bird-database-highlights)  
 5. [Setup Instructions](#setup-instructions)  
 6. [Files and Storage](#files-and-storage)  
-7. [Example Usage](#example-usage)  
 
 ---
 
@@ -134,22 +133,3 @@ To run this project, you will need:
 - **Java Runtime Environment (JRE)** version 8 or higher.
 - A compatible IDE or text editor for editing and running Java programs (e.g., IntelliJ IDEA, Eclipse, or Visual Studio Code).
 
-### **Running the App**  
-
-1. **Clone the repository**:
-    ```bash
-    git clone https://github.com/your-username/feather-quest.git
-    cd feather-quest
-    ```
-
-2. **Compile the Java code**:
-    ```bash
-    javac BirdWatchingApp.java
-    ```
-
-3. **Run the program**:
-    ```bash
-    java BirdWatchingApp
-    ```
-
----
