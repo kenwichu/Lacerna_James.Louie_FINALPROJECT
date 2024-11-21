@@ -124,8 +124,7 @@ Date: 2024-11-20
 Time: 10:00 AM
 
 ---
-
-## **Setup Instructions** ⚙️  
+ 
 
 ### **Prerequisites**  
 To run this project, you will need:
