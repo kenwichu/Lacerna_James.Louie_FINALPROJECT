@@ -52,7 +52,7 @@ class BirdWatcher {
     private int sightingsCount;
 
     public BirdWatcher(String username, String password) {
-        this.username = username.toLowerCase();
+        this.username = username;
         this.password = password;
         this.birdDatabase = new HashMap<>();
         this.sightingsCount = 0;
@@ -155,6 +155,7 @@ class BirdWatcher {
         String record = "Bird: " + bird.getName() + ", Location: " + location + ", Date: " + formattedDate + ", Time: " + formattedTime;
         System.out.println("Sighting logged successfully.");
 
+        // Print out bird details after logging
         System.out.println("Bird Details:");
         System.out.println("Name: " + bird.getName());
         System.out.println("Color: " + bird.getColor());
@@ -266,7 +267,7 @@ public class BirdWatchingApp {
 
     private static void login() {
         System.out.print("Enter your username: ");
-        String username = scanner.nextLine().toLowerCase();
+        String username = scanner.nextLine();
         if (users.containsKey(username)) {
             System.out.print("Enter your password: ");
             String password = scanner.nextLine();
@@ -285,7 +286,7 @@ public class BirdWatchingApp {
 
     private static void signUp() {
         System.out.print("Enter your new username: ");
-        String username = scanner.nextLine().toLowerCase();
+        String username = scanner.nextLine();
         if (users.containsKey(username)) {
             System.out.println("Username already exists. Please log in.");
         } else {
@@ -338,7 +339,7 @@ public class BirdWatchingApp {
 
     private static void viewOtherUsersRanks() {
         System.out.println("=================================================================");
-        System.out.println("                    OTHER USERS' RANKS");
+        System.out.println("|                   OTHER USERS' RANKS                          |");
         System.out.println("=================================================================");
         for (BirdWatcher watcher : users.values()) {
             System.out.println("User: " + watcher.getUsername() + " | Rank: " + watcher.getRank() + " | Sightings: " + watcher.getSightingsCount());
